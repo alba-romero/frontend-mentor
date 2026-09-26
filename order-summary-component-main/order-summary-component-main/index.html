@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+  rel="stylesheet"
+>
+
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div id="card">
+   <img src="./images/illustration-hero.svg" alt="illustration-hero" class="illustration-hero">
+  
+<div class="container">
+  <h1>Order Summary</h1>
+
+  <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+
+
+<div class="plan">
+ <div class="plan-info">
+
+
+  <img src="./images/icon-music.svg" alt="icon-music" class="icon-music">
+  <div>
+ <strong>Annual Plan</strong>
+  <span>$59.99/year</span>
+
+  </div>
+ </div>
+
+ <a href="#">Change</a>
+</div>
+<button>Proceed to Payment</button>
+  
+  <a href="#" class="cancel-link">Cancel Order</a>
+
+</div>
+</div>
+</body>
+
+  
+  <style>
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 1rem;
+    font-weight: 900;
+  }
+  p {
+    font-size: 0.9375rem;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .container {
+  padding: 2rem;
+  text-align: center;
+  }
+  .plan {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  }
+  .plan img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .plan-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .plan strong {
+    font-size: 0.9375rem;
+    color: hsl(223, 47%, 23%);
+  }
+  .plan span {
+    font-size: 0.8125rem;
+    color: hsl(224, 23%, 55%);
+  }
+  .plan a {
+    font-size: 0.8125rem;
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+  }
+  button {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  button:hover {
+    background-color: hsl(245, 75%, 60%);
+  }
+  .cancel-link {
+    font-size: 0.8125rem;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+  }
+  .cancel-link:hover {
+    text-decoration: underline;
+  }
+  #card {
+  max-width: 400px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
+  }
+  .illustration-hero {
+     width: 100%;
+  display: block;
+  }
+  .plan-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+@media (max-width: 600px) {
+  body {
+   background-image: url('./images/pattern-background-mobile.svg');
+  }
+  #card {
+    margin: 1rem;
+  }
+}
+
+  </style>
+  
+</body>
+</html>
