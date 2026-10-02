@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div id="contenedor-principal">
+  <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall" width="88" height="88">
+  <h1>Jessica Randall</h1>
+  <p class="ubicacion">London, United Kingdom</p>
+  <p class="descripcion">"Front-end developer and avid reader."</p>
+<div class="links">
+  <div class="contenedor">GitHub</div>
+  <div class="contenedor">Frontend Mentor</div>
+  <div class="contenedor">LinkedIn</div>
+  <div class="contenedor">Twitter</div>
+  <div class="contenedor">Instagram</div>
+  </div>
+</div>
+</body>
+<style>
+  *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    font-family: 'Inter', sans-serif;
+
+  }
+  #contenedor-principal{
+    width: 384px;
+    padding: 40px;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .contenedor{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: #ffff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+
+  }
+  img{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+  }
+  .links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  h1{
+    margin: 24px 0 8px;
+    color: #ffff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .ubicacion{
+    color: #c4f82a;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .descripcion{
+    margin: 24px 0;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .contenedor:hover{
+    background-color: #c4f82a;
+    color: #141414;
+    cursor: pointer;
+  }
+</style>
+</html>
